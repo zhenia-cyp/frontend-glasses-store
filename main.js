@@ -1,11 +1,14 @@
-$(document).ready(function () {
-  $(".slider").slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper("#homeSlider", {
+    loop: true,
+    speed: 600,
+    slidesPerView: 1,
+    spaceBetween: 16,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: "#homeSlider .swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: "#homeSlider .swiper-button-next",
+      prevEl: "#homeSlider .swiper-button-prev",
+    },
   });
 });
