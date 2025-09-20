@@ -1,0 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper("#homeSlider", {
+    loop: true,
+    speed: 1000,
+    slidesPerView: 2,
+    spaceBetween: 16,
+    autoplay: { delay: 5000, disableOnInteraction: false },
+    pagination: { el: "#homeSlider .swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: "#homeSlider .swiper-button-next",
+      prevEl: "#homeSlider .swiper-button-prev",
+    },
+  });
+});
+                                              
