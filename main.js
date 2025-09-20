@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     speed: 600,
     slidesPerView: 1,
     spaceBetween: 16,
-    autoplay: { delay: 3000, disableOnInteraction: false },
+    autoplay: { delay: 5000, disableOnInteraction: false },
     pagination: { el: "#homeSlider .swiper-pagination", clickable: true },
     navigation: {
       nextEl: "#homeSlider .swiper-button-next",
