@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const swiper = new Swiper("#homeSlider", {
     loop: true,
-    speed: 600,
-    slidesPerView: 1,
+    speed: 1000,
+    slidesPerView: 2,
     spaceBetween: 16,
     autoplay: { delay: 5000, disableOnInteraction: false },
     pagination: { el: "#homeSlider .swiper-pagination", clickable: true },
@@ -12,3 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
+                                              
