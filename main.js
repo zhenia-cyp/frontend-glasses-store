@@ -12,4 +12,30 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
-                                              
+
+document.addEventListener("DOMContentLoaded", function () {
+  let cartCount = 0;
+  const buttons = document.querySelectorAll(".add-to-cart-btn");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      this.classList.add("animate");
+      setTimeout(() => this.classList.remove("animate"), 300);
+
+      const popup = this.parentElement.querySelector(".mini-popup");
+      if (popup) {
+        popup.classList.remove("show");
+
+        setTimeout(() => {
+          popup.classList.add("show");
+
+          setTimeout(() => {
+            popup.classList.remove("show");
+          }, 1000);
+        }, 100);
+      }
+      cartCount++;
+      cart = document.querySelector(".cart-badge");
+      cart.textContent = cartCount;
+    });
+  });
+});
