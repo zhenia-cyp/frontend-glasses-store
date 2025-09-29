@@ -26,13 +26,27 @@
               <li class="top-links-item"><a href="#" class="top-links-item-link">Контакти</a></li>
             </ul>
           </nav>
-          <nav class="header-right">
-            <ul class="user-list">
-              <li class="user-list-item"><a href="#" class="user-list-item-link">Вхід</a></li>
-              <li class="user-list-item"><a href="#" class="user-list-item-link">Закладки (0)</a></li>
-              <li class="user-list-item"><a href="#" class="cart user-list-item-link"><i class="fa-solid fa-cart-plus"></i> Кошик (0)</a></li>
-            </ul>
-          </nav>
+         <ul class="header-right">
+          <li class="user-list-item">
+                <a href="#" class="user-list-item-link">
+                  <i class="fa-regular fa-user"></i>
+                  Вхід
+                </a>
+              </li>
+                <li class="user-list-item">
+                <a href="#" class="user-list-item-link">
+                  <i class="fa-regular fa-heart"></i>
+                  Вибране
+                </a>
+          </li> 
+          <li class="user-list-item-link cart-block">
+                <a href="#" class="cart">
+                      <i class="fa-solid fa-cart-plus"></i> 
+                      Кошик
+                       <span class="cart-badge" id="cartBadge">0</span>
+                 </a>
+              </li>
+          </ul> 
         </div>
       </div>
     </header>
@@ -142,8 +156,143 @@
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
       </div>
+      <div class="frames">
+            <ul>
+               <li class="frame-category">
+                <a class="category" href="#">Оправи чоловічі</a>
+              </li>
+            </ul>
+          <div class="products">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span class="badge badge-new"></span>
+                        <span class="badge badge-sale"></span>
+                    </div>
+                    <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/ray-ban-1.png" alt="Ray-Ban Aviator Classic" class="product-image primary">
+                        <img src="images/ray-ban-2.png" alt="Ray-Ban Aviator Classic" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand">Ray-Ban</div>
+                    <h3 class="product-name">Ray-Ban Aviator Classic</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 500 ₴</span>
+                        <span class="old-price">5 200 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                   <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/ray-ban-2.png" alt="Ray-Ban Hexagonal - основне фото" class="product-image primary">
+                        <img src="images/ray-ban-1.png" alt="Ray-Ban Hexagonal - додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Ray-Ban</p></div>
+                    <h3 class="product-name">Ray-Ban Hexagonal Flat Lenses</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 800 ₴</span>
+                    </div>
+                     <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span class="badge badge-sale"></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/ray-ban-1.png" alt="Ray-Ban Round Metal - основне фото" class="product-image primary">
+                        <img src="images/ray-ban-2.png" alt="Ray-Ban Round Metal - додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Ray-Ban</p></div>
+                    <h3 class="product-name">Ray-Ban Round Metal</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 200 ₴</span>
+                        <span class="old-price">4 800 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span class="badge badge-new"></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/ray-ban-2.png" alt="Ray-Ban Clubmaster - основне фото" class="product-image primary">
+                        <img src="images/ray-ban-1.png" alt="Ray-Ban Clubmaster - додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Ray-Ban</p></div>
+                    <h3 class="product-name">Ray-Ban Clubmaster</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 600 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="main.js"></script>
