@@ -90,3 +90,88 @@ function updateBadges() {
   });
 }
 updateBadges();
+
+
+class BeforeAfterSlider {
+  constructor(containerId) {
+    this.comparison = document.getElementById(containerId);
+    this.imageAfter = document.getElementById("imageAfter");
+    this.sliderLine = document.getElementById("sliderLine");
+    this.sliderButton = document.getElementById("sliderButton");
+    this.isDragging = false;
+
+    this.init();
+  }
+
+  init() {
+    this.attachEventListeners();
+  }
+
+  updateSlider(clientX) {
+    const rect = this.comparison.getBoundingClientRect();
+    let position = ((clientX - rect.left) / rect.width) * 100;
+
+    // Обмежуємо позицію від 0 до 100
+    position = this.clampPosition(position);
+
+    this.applySliderPosition(position);
+  }
+
+  clampPosition(position) {
+    return Math.max(0, Math.min(100, position));
+  }
+
+  applySliderPosition(position) {
+    this.sliderLine.style.left = position + "%";
+    this.imageAfter.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
+  }
+
+  startDragging() {
+    this.isDragging = true;
+  }
+
+  stopDragging() {
+    this.isDragging = false;
+  }
+
+  handleMouseMove(e) {
+    if (this.isDragging) {
+      this.updateSlider(e.clientX);
+    }
+  }
+
+  handleTouchMove(e) {
+    if (this.isDragging) {
+      this.updateSlider(e.touches[0].clientX);
+    }
+  }
+
+  handleClick(e) {
+    this.updateSlider(e.clientX);
+  }
+
+  handleTouchStart(e) {
+    this.startDragging();
+    e.preventDefault();
+  }
+
+  attachEventListeners() {
+    // Обробка миші
+    this.sliderButton.addEventListener("mousedown", () => this.startDragging());
+    document.addEventListener("mousemove", (e) => this.handleMouseMove(e));
+    document.addEventListener("mouseup", () => this.stopDragging());
+
+    // Клік по контейнеру
+    this.comparison.addEventListener("click", (e) => this.handleClick(e));
+
+    // Обробка дотику (мобільні пристрої)
+    this.sliderButton.addEventListener("touchstart", (e) =>
+      this.handleTouchStart(e)
+    );
+    document.addEventListener("touchmove", (e) => this.handleTouchMove(e));
+    document.addEventListener("touchend", () => this.stopDragging());
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  new BeforeAfterSlider("comparison");
+});
