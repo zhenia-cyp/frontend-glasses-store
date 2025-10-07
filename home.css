@@ -26,12 +26,12 @@ body {
   padding: 0;
 }
 
-.block-content-wrapp {
-  max-width: 1200px;
+.container {
+  max-width: 1300px;
   margin: 0 auto;
 }
 
-.header-top .block-content-wrapp {
+.header-top .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +73,7 @@ body {
   border-bottom: 1px solid #e9e9e9;
 }
 
-.header-middle .block-content-wrapp {
+.header-middle .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -280,6 +280,11 @@ body {
 
 .cart:hover {
   color: #ff6600;
+}
+
+#homeSlider .swiper-slide {
+  margin-right: 0 !important;
+  padding: 0;
 }
 
 #homeSlider .swiper-pagination-bullet {
@@ -523,10 +528,8 @@ body {
 
 .add-to-cart-btn:hover {
   color: #202020;
-  border: none;
   transform: translateY(-1px);
   opacity: 1;
-  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -711,6 +714,11 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.label.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .label-before {
   left: 20px;
 }
@@ -775,7 +783,6 @@ body {
   min-width: 300px;
   margin-bottom: 15px;
 }
-
 
 .blog-image {
   width: 150px;
@@ -855,5 +862,5 @@ body {
 }
 
 .read-more:hover {
-   background-color: #555;
+  background-color: #555;
 }
