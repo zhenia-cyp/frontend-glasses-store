@@ -126,7 +126,6 @@ class BeforeAfterSlider {
     }
 
     this.isDragging = false;
-
     this.boundHandleMouseMove = this.handleMouseMove.bind(this);
     this.boundHandleMouseUp = this.stopDragging.bind(this);
     this.boundHandleTouchMove = this.handleTouchMove.bind(this);

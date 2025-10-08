@@ -655,11 +655,11 @@ body {
 }
 
 .image-before {
-  background-image: url("../images/before-slider.png");
+  background-image: url("images/before-slider.png");
 }
 
 .image-after {
-  background-image: url("../images/after-slider.png");
+  background-image: url("images/after-slider.png");
   clip-path: inset(0 50% 0 0);
 }
 
@@ -768,7 +768,6 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 25px;
-  max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
