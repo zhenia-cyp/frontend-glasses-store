@@ -18,7 +18,7 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <div class="block-content-wrapp">
+        <div class="container">
           <nav class="header-left">
             <ul class="top-links">
               <li class="top-links-item"><a href="#" class="top-links-item-link">Доставка та оплата</a></li>
@@ -36,7 +36,7 @@
                 <li class="user-list-item">
                 <a href="#" class="user-list-item-link">
                   <i class="fa-regular fa-heart"></i>
-                  Вибране
+                  Oбране
                 </a>
           </li> 
           <li class="user-list-item-link cart-block">
@@ -51,7 +51,7 @@
       </div>
     </header>
     <div class="header-middle">
-      <div class="block-content-wrapp">
+      <div class="container">
         <div class="logo">
           <a href="#">
             <img src="images/logo.png" alt="o4ki.com.ua" />
@@ -76,7 +76,7 @@
       </div>
     </div>
     <nav class="header-nav-menu">
-      <div class="block-content-wrapp">
+      <div class="container">
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="active">Головна</a>
@@ -146,7 +146,7 @@
     </nav>
     
     <main class="content">
-      <div class="block-content-wrapp">
+      <div class="container">
         <div class="slider swiper" id="homeSlider">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="images/slider-1.png" alt="Очки 1" /></div>
@@ -156,15 +156,15 @@
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-      </div>
-      <div class="frames">
+        </div>
+        <section  class="frames">
             <ul>
                <li class="frame-category">
                 <a class="category" href="#">Оправи чоловічі</a>
               </li>
             </ul>
           <div class="products">
-            <div class="product-card">
+            <article class="product-card">
                 <div class="product-image-container">
                     <div class="badges">
                         <span class="badge badge-new"></span>
@@ -197,9 +197,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="product-card">
+            <acticle class="product-card">
                 <div class="product-image-container">
                    <button class="wishlist-btn" type="button" aria-pressed="false">
                         <i class="fa-regular fa-heart" aria-hidden="true"></i>
@@ -226,9 +226,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </acticle>
 
-            <div class="product-card">
+            <article class="product-card">
                 <div class="product-image-container">
                     <div class="badges">
                         <span class="badge badge-sale"></span>
@@ -260,9 +260,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="product-card">
+            <article class="product-card">
                 <div class="product-image-container">
                     <div class="badges">
                         <span class="badge badge-new"></span>
@@ -292,7 +292,472 @@
                         </div>
                     </div>
                 </div>
+            </article>
+          </div>
+        </section>
+
+        <section  class="frames">
+            <ul>
+               <li class="frame-category">
+                <a class="category" href="#">Жіночі оправи</a>
+              </li>
+            </ul>
+          <div class="products">
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/carl zeiss-1.png" alt="Ray-Ban Aviator Classic" class="product-image primary">
+                        <img src="images/carl zeiss-2.png" alt="Ray-Ban Aviator Classic" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand">Rodenstock</div>
+                    <h3 class="product-name">Німеччина</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 500 ₴</span>
+                        <span class="old-price">5 200 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                   <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/filman-1.png" alt="основне фото" class="product-image primary">
+                        <img src="images/filman-2.png" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Fielmann</p></div>
+                    <h3 class="product-name">Німеччина</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 800 ₴</span>
+                    </div>
+                     <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images//Rodenstock-1.png" alt="основне фото" class="product-image primary">
+                        <img src="images/Rodenstock-2.png" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Rodenstock</p></div>
+                    <h3 class="product-name">Мюнхен</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 200 ₴</span>
+                        <span class="old-price">4 800 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span class="badge badge-new"></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/mark-jacobs-1.png" alt="Ray-Ban Clubmaster - основне фото" class="product-image primary">
+                        <img src="images/mark-jacobs-2.png" alt="Ray-Ban Clubmaster - додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Marс Jacobs</p></div>
+                    <h3 class="product-name">Iталія</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 600 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+          </div>
+        </section>
+
+        <section  class="frames">
+            <ul>
+               <li class="frame-category">
+                <a class="category" href="#">Coнцезахисні окуляри</a>
+              </li>
+            </ul>
+          <div class="products">
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/polaroid-1.png" alt="Ray-Ban Aviator Classic" class="product-image primary">
+                        <img src="images/polaroid-2.png" alt="Ray-Ban Aviator Classic" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand">Rodenstock</div>
+                    <h3 class="product-name">Німеччина</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 500 ₴</span>
+                        <span class="old-price">5 200 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                   <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/ray-ban-sun-1.png" alt="основне фото" class="product-image primary">
+                        <img src="images/ray-ban-sun-2.png" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Ray Ban</p></div>
+                    <h3 class="product-name">Iталія</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 800 ₴</span>
+                    </div>
+                     <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span  class="badge badge-sale"></class=>></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/polo-ralph-lauren-1.png" alt="основне фото" class="product-image primary">
+                        <img src="images/polo-ralph-lauren-2.png" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Polo ralph lauren</p></div>
+                    <h3 class="product-name">СШA</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 200 ₴</span>
+                        <span class="old-price">4 800 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/michael-kors-sun-1.png" alt="Ray-Ban Clubmaster - основне фото" class="product-image primary">
+                        <img src="images/michael-cors-sun-2.png" alt="Ray-Ban Clubmaster - додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Michael Cors </p></div>
+                    <h3 class="product-name">СШA</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 600 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        <div class="mini-popup success">
+                            <i class="fas fa-check"></i>
+                            <p>Товар додано!</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+          </div>
+      
+        </section>
+        <p class="driving-linses-title">Окулярні лінзи для нічного водіння</p>
+        <div class="comparison-container">
+            <div class="comparison-image" id="comparison">
+                <div class="image-before"></div>
+                <div class="image-after" id="imageAfter"></div>
+                <div class="slider-line" id="sliderLine">
+                    <div class="slider-button" id="sliderButton">
+                        <span>&lt;</span>
+                        <span>&gt;</span>
+                    </div>
+                </div>
+                <div class="label label-before">без нічних лінз</div>
+                <div class="label label-after">з нічними лінзами</div>
+                
+                
+                
             </div>
+         </div>
+        <div class="frames">
+            <ul>
+               <li class="frame-category">
+                <a class="category" href="#">Окуляри для водіїв</a>
+              </li>
+            </ul>
+          <div class="products">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/driver_glasses-1.jpg" alt="Ray-Ban Aviator Classic" class="product-image primary">
+                        <img src="images/driver_glasses-1.jpg" alt="Ray-Ban Aviator Classic" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand">Rodenstock</div>
+                    <h3 class="product-name">Німеччина</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 500 ₴</span>
+                        <span class="old-price">5 200 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                   <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/driver_glasses-2.jpg" alt="основне фото" class="product-image primary">
+                        <img src="images/driver_glasses-2.jpg" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Ray Ban</p></div>
+                    <h3 class="product-name">Iталія</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 800 ₴</span>
+                    </div>
+                     <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span  class="badge badge-sale"></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false">
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    
+                    <div class="image-wrapper">
+                        <img src="images/driver-glasses-3.jpg" alt="основне фото" class="product-image primary">
+                        <img src="images/driver-glasses-3.jpg" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Polo ralph lauren</p></div>
+                    <h3 class="product-name">СШA</h3>
+                    <div class="product-price">
+                        <span class="current-price">4 200 ₴</span>
+                        <span class="old-price">4 800 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="badges">
+                        <span></span>
+                    </div>
+                      <button class="wishlist-btn" type="button" aria-pressed="false" >
+                        <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <div class="image-wrapper">
+                        <img src="images/driver-glasses-4.jpg" alt="основне фото" class="product-image primary">
+                        <img src="images/driver-glasses-4.jpg" alt="додаткове фото" class="product-image secondary">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <div class="product-brand"><p>Michael Cors </p></div>
+                    <h3 class="product-name">СШA</h3>
+                    <div class="product-price">
+                        <span class="current-price">3 600 ₴</span>
+                    </div>
+                    <div class="button-with-popup">
+                        <button class="add-to-cart-btn">
+                            <span>у кошик</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+         <section class="blog-section">
+            <div class="blog-header">
+                <h2 class="blog-title">Цікаве про очі</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="all-articles-link">всі статті</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-container">
+                <article class="blog-card">
+                    <div class="blog-image blog-image-1"></div>
+                    <div class="blog-content">
+                        <h3>Історія контактних лінз</h3>
+                        <div class="blog-date">22.08.2025 15:26:00</div>
+                        <p>Перші контактні лінзи з'явились більше 100 років тому. Дізнайтесь про цікаву історію їх розвитку та сучасні технології виробництва.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image blog-image-2"></div>
+                    <div class="blog-content">
+                        <h3>Скільки можна носити контактні лінзи?</h3>
+                        <div class="blog-date">22.08.2025 15:26:00</div>
+                        <p>Поширене питання про тривалість носіння контактних лінз. Експерти радять дотримуватись певних правил для здоров'я очей.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image blog-image-3"></div>
+                    <div class="blog-content">
+                        <h3>Догляд за контактними лінзами</h3>
+                        <div class="blog-date">22.08.2025 15:26:00</div>
+                        <p>Правильний догляд за контактними лінзами - запорука здоров'я ваших очей. Дізнайтесь про основні правила та рекомендації.</p>
+                        <a href="#" class="read-more">Читати далі</a>
+                    </div>
+                </article>
+            </div>
+    </section>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="main.js"></script>
