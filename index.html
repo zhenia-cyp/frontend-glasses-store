@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="forms.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -55,8 +56,9 @@
         <div class="logo">
           <a href="#">
             <img src="images/logo.png" alt="o4ki.com.ua" />
+             <p class="slogan">оптика з майстром</p>
           </a>
-          <div class="slogan">оптика з майстром</div>
+         
         </div>
 
         <div class="free-call">
@@ -142,7 +144,6 @@
             <a href="#" class="no-dropdown">Блог</a>
           </li>
         </ul>
-        
     </nav>
     
     <main class="content">
@@ -756,9 +757,85 @@
                     </div>
                 </article>
             </div>
-    </section>
+       </section>
       </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top subscription-section">
+               <div class="subscription-content">
+                    <p class="subscribe-title">Підпишіться на знижки</p>
+                    <form class="subscription-form" onsubmit="subscribeSubmit(event)">
+                        <input class="subscription-input"
+                            type="email"
+                            placeholder="Введіть вашу email адресу"
+                            required />
+                        <button type="submit" class="subscribe-btn">Підписатися</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo custom-bottom">
+                            <a href="#">
+                                <img src="images/logo.png" alt="o4ki.com.ua" />
+                                 <p class="slogan">оптика з майстром</p>
+                            </a>
+                           
+                         </div>
+                    </div>
+                    <p class="footer-description">
+                        з турботою про ваші очі
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Контакти</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <div class="telephone icon"></div>
+                            <a href="tel:0800777777">0 800 777 777</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="address icon"></div>
+                            <span>Київ, Бульвар Кольцова 12</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="envelope icon"></div>
+                            <a href="mailto:info@o4ki.com.ua">info@o4ki.com.ua</a>
+                        </div>
+                        <div class="working-hours">
+                            <p>Пн-Сб: 10:00 - 19:00</p>
+                            <p>Неділя: вихідний</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Ми в соцмережах</h4>
+                    <div class="social-links">
+                        <div class="social-link facebook"></div>
+                        <div class="social-link instagram"></div>
+                        <div class="social-link twitter"></div>
+                        
+                    </div>
+                    <p class="social-text">
+                        Слідкуйте за нашими новинами
+                    </p>
+                </div>
+           </div>
+            <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p class="copyright">© 2025 o4ki.com.ua. Всі права захищені</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/ievgen-kviatkivskyi/" target="_blank">developed by ievgen</a>
+                    
+                </div>
+            </div>
+        </div>
+       </div>
+     </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="main.js"></script>
   </body>

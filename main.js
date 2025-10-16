@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     speed: 1000,
     slidesPerView: 2,
     spaceBetween: 0,
+    centeredSlides: false,
     autoplay: { delay: 5000, disableOnInteraction: false },
     pagination: { el: "#homeSlider .swiper-pagination", clickable: true },
     navigation: {
@@ -245,3 +246,27 @@ class BeforeAfterSlider {
 document.addEventListener("DOMContentLoaded", () => {
   const slider1 = new BeforeAfterSlider("#comparison");
 });
+
+function createPopup(type) {
+  if (type !== "success") {
+    return;
+  }
+  const popup = document.createElement("div");
+  popup.className = "subscribe-success-popup";
+  popup.textContent = "Дякуємо за підписку!";
+  const subscriptionContent = document.querySelector(".subscription-section");
+  subscriptionContent.appendChild(popup);
+  setTimeout(() => popup.classList.add("active"), 10);
+  setTimeout(() => {
+    popup.classList.remove("active");
+    setTimeout(() => popup.remove(), 300);
+  }, 2000);
+}
+
+function subscribeSubmit(e) {
+  e.preventDefault();
+  const emailInput = e.target.querySelector('input[type="email"]');
+  const email = emailInput.value.trim();
+  createPopup("success");
+  e.target.reset();
+}
